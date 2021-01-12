@@ -42,35 +42,50 @@ $font-family-text: "Roboto", sans-serif;
 
 //hero
 
-.header__container {
-  height: 568px;
+.header__hero {
+  height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end; /*flex-end: los elementos aparecen agrupados al final ( end ) del eje principal*/
   text-align: center;
   color: $color-white;
-}
-
-.header__container--image {
   background: url("../images/cover.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
-  min-height: 100vh;
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+.header__text {
+  margin-bottom: 53px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
-.header__container--title {
-  /*margin: 284px 15px 174px 15px;*/
+.header__hero--title {
   font-size: 42px;
-  transform: translateY(-150px);
   text-transform: uppercase;
   font-family: $font-family-title;
+  margin-bottom: 10px;
 }
 
-.header__container--subtitle {
-  /*margin: 404px 15px 143px 15px;*/
+.header__hero--subtitle {
   font-size: 16px;
-  transform: translateY(-150px);
   font-family: $font-family-text;
+  margin-bottom: 45px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+}
+
+.header__hero--button {
+  height: 45px;
+  width: 45px;
+  background-color: $color-white;
+  border-radius: 22.5px;
+  text-decoration: none;
+  border: none;
 }
