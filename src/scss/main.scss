@@ -1,0 +1,76 @@
+/*@import 'core/variables';
+@import 'core/reset';
+@import 'components/code';
+@import 'components/links';
+@import 'layout/page';
+@import 'layout/header';
+@import 'layout/footer';
+@import 'pages/index';*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+// colors
+
+$color-c: #f26002;
+$color-white: #ffffff;
+$color-lightblue: #8ccbea;
+$color-blue: #0271bc;
+$color-dark-grey-blue: #304268;
+
+// fonts
+$font-family-title: "Roboto Slab", serif;
+$font-family-text: "Roboto", sans-serif;
+
+//HEADER
+
+//hamburger menu
+.header__ico-menu {
+  width: 44px;
+  height: 44px;
+  background-color: $color-blue;
+  position: fixed;
+  top: 0;
+}
+.header__ico-menu--arrows {
+  width: 16px;
+  height: 14px;
+  padding: 15px 14px;
+}
+
+//hero
+
+.header__container {
+  height: 568px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  color: $color-white;
+}
+
+.header__container--image {
+  background: url("../images/cover.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  min-height: 100vh;
+}
+
+.header__container--title {
+  /*margin: 284px 15px 174px 15px;*/
+  font-size: 42px;
+  transform: translateY(-150px);
+  text-transform: uppercase;
+  font-family: $font-family-title;
+}
+
+.header__container--subtitle {
+  /*margin: 404px 15px 143px 15px;*/
+  font-size: 16px;
+  transform: translateY(-150px);
+  font-family: $font-family-text;
+}
