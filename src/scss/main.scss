@@ -256,11 +256,13 @@ $color-black: #000000;
   border-radius: 22.5px;
   text-decoration: none;
   border: none;
+  transform: translateY(-25px);
 }
 
 .footer__menu {
   list-style-type: none;
   text-transform: uppercase;
+  margin-bottom: 30px;
 }
 
 .footer__menu--link {
@@ -276,6 +278,8 @@ $color-black: #000000;
   text-align: center;
 }
 .footer__small {
+  display: flex;
+  flex-direction: column;
   color: $color-white;
   font-family: $font-family-text;
   font-size: 14px;
