@@ -27,6 +27,8 @@ $font-family-text: "Roboto", sans-serif;
 $color-greyish-brown: #4a4a4a;
 $color-black: #000000;
 
+//BODY
+
 //HEADER
 
 //hamburger menu
@@ -137,7 +139,9 @@ $color-black: #000000;
   line-height: 1.67;
   letter-spacing: normal;
 }
+/*DEBE TENER UNA TRANSICION*/
 .module2-container__button {
+  width: 184px;
   width: 76px;
   height: 45px;
   margin: 30px 214px 0 0;
@@ -210,6 +214,8 @@ $color-black: #000000;
   margin-bottom: 45px;
   width: 180px;
 }
+
+/*DEBE TENER UNA TRANSICION*/
 .module3-container__button {
   width: 184px;
   height: 45px;
@@ -227,4 +233,60 @@ $color-black: #000000;
   text-align: center;
   grid-row: 5/6;
   margin-bottom: 60px;
+}
+
+// FOOTER
+
+// MODULE 4
+
+.footer {
+  width: 100%;
+  height: 465px;
+  background-color: $color-dark-grey-blue;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+.footer__button {
+  height: 45px;
+  width: 45px;
+  background-color: $color-white;
+  border-radius: 22.5px;
+  text-decoration: none;
+  border: none;
+}
+
+.footer__menu {
+  list-style-type: none;
+  text-transform: uppercase;
+}
+
+.footer__menu--link {
+  text-decoration: none;
+  color: $color-white;
+  font-family: $font-family-text;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.88;
+  letter-spacing: normal;
+  text-align: center;
+}
+.footer__small {
+  color: $color-white;
+  font-family: $font-family-text;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.14;
+  letter-spacing: normal;
+  text-align: center;
+  margin-bottom: 45px;
+}
+.footer__small--heart {
+  color: $color-c;
 }
