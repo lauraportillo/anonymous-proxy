@@ -17,12 +17,15 @@
 $color-c: #f26002;
 $color-white: #ffffff;
 $color-lightblue: #8ccbea;
+$color-ice-blue: #eff9ff;
 $color-blue: #0271bc;
 $color-dark-grey-blue: #304268;
 
 // fonts
 $font-family-title: "Roboto Slab", serif;
 $font-family-text: "Roboto", sans-serif;
+$color-greyish-brown: #4a4a4a;
+$color-black: #000000;
 
 //HEADER
 
@@ -89,3 +92,106 @@ $font-family-text: "Roboto", sans-serif;
   text-decoration: none;
   border: none;
 }
+// MAIN
+
+// MODULE 2
+
+.module2-container {
+  width: 100%;
+  height: 376px;
+  box-sizing: border-box; /* no lo puedo poner en reset, ojo*/
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px 15px 45px 15px;
+}
+
+.module2-container__tips {
+  font-family: $font-family-text;
+  color: $color-lightblue;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.14;
+  letter-spacing: normal;
+}
+.module2-container__article--title {
+  /*ALGO NO FUNCIONA CON EL BOLD*/
+  font-weight: $font-family-title;
+  color: $color-black;
+  font-size: 24px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  text-transform: capitalize;
+  margin-bottom: 15px;
+}
+.module2-container__article--text {
+  color: $color-greyish-brown;
+  font-family: $font-family-text;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.67;
+  letter-spacing: normal;
+}
+.module2-container__button {
+  width: 76px;
+  height: 45px;
+  margin: 30px 214px 0 0;
+  padding: 0 25px 0 26px;
+  border-radius: 22.5px;
+  border: solid 2px $color-c;
+  background-color: $color-white;
+  font-family: $font-family-text;
+  font-size: 20px;
+  color: $color-c;
+}
+// MODULE 3
+
+/*.module3-container {
+  width: 100%;
+  height: 624px;
+  background-color: $color-ice-blue;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.module3-container__reasons {
+  font-weight: $font-family-title;
+  color: $color-black;
+  font-size: 24px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  text-align: center;
+}
+.module3-container__article--title {
+  font-weight: $font-family-title;
+  color: $color-black;
+  font-size: 18px;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.67;
+  letter-spacing: normal;
+  text-align: center;
+}
+
+.module3-container__article--text {
+  font-family: $font-family-text;
+  color: $color-black;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.67;
+  letter-spacing: normal;
+  text-align: center;
+}
+*/
