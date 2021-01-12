@@ -294,3 +294,7 @@ $color-black: #000000;
 .footer__small--heart {
   color: $color-c;
 }
+
+#anchor-reasons {
+  scroll-margin-top: 45px; /*corrección para que el menu no tape el texto*/
+}
