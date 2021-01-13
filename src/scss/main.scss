@@ -146,7 +146,6 @@ $color-black: #000000;
   letter-spacing: normal;
 }
 .module2-container__button {
-  width: 184px;
   width: 76px;
   height: 45px;
   margin: 30px 214px 0 0;
@@ -157,6 +156,12 @@ $color-black: #000000;
   font-family: $font-family-text;
   font-size: 20px;
   color: $color-c;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.25;
+  letter-spacing: normal;
+  text-align: center;
 }
 /*hover transición*/
 .module2-container__button:hover {
@@ -264,6 +269,7 @@ $color-black: #000000;
   width: 100%;
   height: 465px;
   background-color: $color-dark-grey-blue;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -306,6 +312,13 @@ $color-black: #000000;
 .footer__small {
   display: flex;
   flex-direction: column;
+  margin-bottom: 45px;
+}
+
+.footer__small--heart {
+  color: $color-c;
+}
+.footer__small--copy {
   color: $color-white;
   font-family: $font-family-text;
   font-size: 14px;
@@ -315,12 +328,174 @@ $color-black: #000000;
   line-height: 2.14;
   letter-spacing: normal;
   text-align: center;
-  margin-bottom: 45px;
 }
-.footer__small--heart {
-  color: $color-c;
+.footer__small--love {
+  color: $color-white;
+  font-family: $font-family-text;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.14;
+  letter-spacing: normal;
+  text-align: center;
 }
 
 #anchor-reasons {
   scroll-margin-top: 45px; /*corrección para que el menu no tape el texto*/
+}
+
+//MEDIAQUERIES
+
+@media all and (min-width: 768px) {
+  //HEADER MODULE 1
+  .header__text {
+    padding-left: 39px;
+    padding-right: 39px;
+    margin-bottom: 45px;
+  }
+  .header__hero--title {
+    margin-bottom: 20px;
+    font-size: 80px;
+  }
+  .header__hero--subtitle {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+  // MAIN MODULE 2
+  .module2-container {
+    height: 330px;
+    padding: 30px 39px 60px 39px;
+  }
+  .module2-container__article--title {
+    font-size: 26px;
+    line-height: 1.73;
+    margin-bottom: 30px;
+  }
+  .module2-container__article--text {
+    font-size: 20px;
+    line-height: 1.5;
+  }
+  .module2-container__button {
+    width: 91px;
+    margin: 30px 599px 0 0;
+    padding: 0 32.5px 0 33.5px;
+  }
+  // MAIN MODULE 3
+  .module3-container {
+    height: 397px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+  .module3-container__reasons {
+    font-size: 26px;
+    line-height: 1.73;
+    margin-bottom: 45px;
+    grid-column: 1/4;
+    grid-row: 1/2;
+    margin-top: 30px;
+  }
+  .module3-container__article1 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  .module3-container__article2 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+  .module3-container__article3 {
+    grid-column: 3/4;
+    grid-row: 2/3;
+  }
+  .module3-container__article--title {
+    font-size: 24px;
+    line-height: 1.25;
+  }
+  .module3-container__article--text {
+    font-size: 20px;
+    line-height: 1.5;
+    width: 212.3px;
+    margin-left: 21.85px;
+    margin-right: 21.85px;
+  }
+  .module3-container__button {
+    width: 210px;
+    margin-bottom: 60px;
+    grid-column: 1/4;
+    grid-row: 3/4;
+  }
+  // FOOTER MODULE 4
+  /*.footer {
+    height: 240px;
+    flex-direction: row;
+  }
+
+  
+
+.footer__button {
+  height: 45px;
+  width: 45px;
+  background-color: $color-white;
+  border-radius: 22.5px;
+  text-decoration: none;
+  border: none;
+  transform: translateY(-25px);
+}
+
+.footer__button:hover {
+  border: none;
+  outline: none;
+}
+
+.footer__menu {
+  list-style-type: none;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.footer__menu--link {
+  text-decoration: none;
+  color: $color-white;
+  font-family: $font-family-text;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.88;
+  letter-spacing: normal;
+  text-align: center;
+}
+.footer__small {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 45px;
+}
+
+.footer__small--heart {
+  color: $color-c;
+}
+.footer__small--copy {
+  color: $color-white;
+  font-family: $font-family-text;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.14;
+  letter-spacing: normal;
+  text-align: center;
+}
+.footer__small--love {
+  color: $color-white;
+  font-family: $font-family-text;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.14;
+  letter-spacing: normal;
+  text-align: center;
+}
+
+*/
 }
