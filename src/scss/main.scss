@@ -94,6 +94,12 @@ $color-black: #000000;
   text-decoration: none;
   border: none;
 }
+
+.header__hero--button:hover {
+  border: none;
+  outline: none;
+}
+
 // MAIN
 
 // MODULE 2
@@ -139,7 +145,6 @@ $color-black: #000000;
   line-height: 1.67;
   letter-spacing: normal;
 }
-/*DEBE TENER UNA TRANSICION*/
 .module2-container__button {
   width: 184px;
   width: 76px;
@@ -153,6 +158,15 @@ $color-black: #000000;
   font-size: 20px;
   color: $color-c;
 }
+/*hover transición*/
+.module2-container__button:hover {
+  background: $color-c;
+  color: $color-white;
+  border: none;
+  outline: none;
+  transition: all 1s;
+}
+
 // MODULE 3
 
 .module3-container {
@@ -215,7 +229,6 @@ $color-black: #000000;
   width: 180px;
 }
 
-/*DEBE TENER UNA TRANSICION*/
 .module3-container__button {
   width: 184px;
   height: 45px;
@@ -233,6 +246,14 @@ $color-black: #000000;
   text-align: center;
   grid-row: 5/6;
   margin-bottom: 60px;
+}
+/*hover transición*/
+.module3-container__button:hover {
+  background: $color-white;
+  color: $color-c;
+  border: solid 2px $color-c;
+  outline: none;
+  transition: all 1s;
 }
 
 // FOOTER
@@ -257,6 +278,11 @@ $color-black: #000000;
   text-decoration: none;
   border: none;
   transform: translateY(-25px);
+}
+
+.footer__button:hover {
+  border: none;
+  outline: none;
 }
 
 .footer__menu {
