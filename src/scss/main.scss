@@ -264,11 +264,12 @@ $color-black: #000000;
 // FOOTER
 
 // MODULE 4
-
-.footer {
+.module4 {
   width: 100%;
   height: 465px;
   background-color: $color-dark-grey-blue;
+}
+.footer {
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -284,6 +285,8 @@ $color-black: #000000;
   text-decoration: none;
   border: none;
   transform: translateY(-25px);
+  display: block;
+  margin: auto;
 }
 
 .footer__button:hover {
@@ -362,6 +365,7 @@ $color-black: #000000;
     font-size: 24px;
     margin-bottom: 30px;
   }
+
   // MAIN MODULE 2
   .module2-container {
     height: 330px;
@@ -425,77 +429,135 @@ $color-black: #000000;
     grid-row: 3/4;
   }
   // FOOTER MODULE 4
-  /*.footer {
+
+  .module4 {
     height: 240px;
+  }
+  .footer {
     flex-direction: row;
+    text-align: start;
+    align-items: flex-start;
+    margin-left: 39px;
+    margin-right: 39px;
+  }
+  .footer__menu {
+    width: 210px;
+  }
+  .footer__small {
+    order: -1;
+    width: 210px;
+  }
+  .footer__small--copy {
+    text-align: left;
+  }
+  .footer__small--love {
+    text-align: left;
+  }
+}
+
+@media all and (min-width: 1280px) {
+  //HEADER MODULE 1
+  .header__text {
+    margin-bottom: 13px;
+    padding-left: 275px;
+    padding-right: 275px;
+  }
+  .header__hero--title {
+    font-size: 100px;
+    margin-bottom: 0px;
+  }
+  .header__hero--subtitle {
+    font-size: 24px;
   }
 
-  
+  // MAIN MODULE 2
 
-.footer__button {
-  height: 45px;
-  width: 45px;
-  background-color: $color-white;
-  border-radius: 22.5px;
-  text-decoration: none;
-  border: none;
-  transform: translateY(-25px);
-}
+  .module2-container {
+    height: 360px;
+    padding: 60px 275px 60px 275px;
+  }
+  .module2-container__tips {
+    font-size: 16px;
+    line-height: 1.88;
+  }
+  .module2-container__article--title {
+    font-size: 32px;
+    line-height: 1.41;
+    margin-bottom: 30px;
+  }
+  .module2-container__article--text {
+    font-size: 20px;
+    line-height: 1.5;
+  }
 
-.footer__button:hover {
-  border: none;
-  outline: none;
-}
+  .module2-container__button {
+    width: 160px;
+    margin: 30px 570px 0 0;
+    padding: 0 67px 0 68px;
+  }
 
-.footer__menu {
-  list-style-type: none;
-  text-transform: uppercase;
-  margin-bottom: 30px;
-}
+  // MAIN MODULE 3
+  .module3-container {
+    height: 427px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+  .module3-container__reasons {
+    font-size: 32px;
+    line-height: 1.41;
+    grid-column: 1/4;
+    grid-row: 1/2;
+    margin-top: 60px;
+  }
+  .module3-container__article1 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  .module3-container__article2 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+  .module3-container__article3 {
+    grid-column: 3/4;
+    grid-row: 2/3;
+  }
+  .module3-container__article--title {
+    font-size: 24px;
+    line-height: 1.25;
+  }
 
-.footer__menu--link {
-  text-decoration: none;
-  color: $color-white;
-  font-family: $font-family-text;
-  font-size: 16px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.88;
-  letter-spacing: normal;
-  text-align: center;
-}
-.footer__small {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 45px;
-}
+  .module3-container__article--text {
+    font-size: 20px;
+    line-height: 1.5;
+    width: 350px;
+    margin-left: 21.85px;
+    margin-right: 21.85px;
+  }
 
-.footer__small--heart {
-  color: $color-c;
-}
-.footer__small--copy {
-  color: $color-white;
-  font-family: $font-family-text;
-  font-size: 14px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 2.14;
-  letter-spacing: normal;
-  text-align: center;
-}
-.footer__small--love {
-  color: $color-white;
-  font-family: $font-family-text;
-  font-size: 14px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 2.14;
-  letter-spacing: normal;
-  text-align: center;
-}
+  .module3-container__button {
+    width: 255px;
+    grid-column: 1/4;
+    grid-row: 3/4;
+    margin-bottom: 60px;
+  }
 
-*/
+  // FOOTER
+
+  // MODULE 4
+  .module4 {
+    height: 240px;
+  }
+  .footer__menu {
+    margin-bottom: 45px;
+    width: 160px;
+  }
+
+  .footer {
+    margin-left: 370px;
+    margin-right: 370px;
+  }
+
+  .footer__small {
+    width: 160px;
+  }
 }
