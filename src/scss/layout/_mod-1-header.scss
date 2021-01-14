@@ -1,0 +1,90 @@
+//HEADER MODULE 1
+
+//hamburger menu
+.header__ico-menu {
+  width: 44px;
+  height: 44px;
+  background-color: $color-blue;
+  position: fixed;
+  top: 0;
+}
+.header__ico-menu--arrows {
+  width: 16px;
+  height: 14px;
+  padding: 15px 14px;
+}
+
+//hero
+
+.header__hero {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /*flex-end: los elementos aparecen agrupados al final ( end ) del eje principal*/
+  text-align: center;
+  color: $color-white;
+  background: url("../images/cover.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+.header__text {
+  margin-bottom: 53px;
+  padding-left: 15px;
+  padding-right: 15px;
+  @media all and (min-width: 768px) {
+    padding-left: 39px;
+    padding-right: 39px;
+    margin-bottom: 45px;
+  }
+  @media all and (min-width: 1280px) {
+    margin-bottom: 13px;
+    padding-left: 275px;
+    padding-right: 275px;
+  }
+}
+
+.header__hero--title {
+  font-size: 42px;
+  text-transform: uppercase;
+  font-family: $font-family-title;
+  margin-bottom: 10px;
+  @media all and (min-width: 768px) {
+    margin-bottom: 20px;
+    font-size: 80px;
+  }
+  @media all and (min-width: 1280px) {
+    font-size: 100px;
+    margin-bottom: 0px;
+  }
+}
+
+.header__hero--subtitle {
+  font-size: 16px;
+  font-family: $font-family-text;
+  margin-bottom: 45px;
+  @include textAlign();
+  @media all and (min-width: 768px) {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+  @media all and (min-width: 1280px) {
+    font-size: 24px;
+  }
+}
+
+.header__hero--button {
+  height: 45px;
+  width: 45px;
+  background-color: $color-white;
+  border-radius: 22.5px;
+  text-decoration: none;
+  border: none;
+}
+
+.header__hero--button:hover {
+  border: none;
+  outline: none;
+}

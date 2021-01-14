@@ -1,0 +1,25 @@
+// mixins
+@mixin textNormal() {
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+}
+@mixin textAlign() {
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+}
+@mixin small() {
+  color: $color-white;
+  font-family: $font-family-text;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  text-align: center;
+  line-height: 2.14;
+}
