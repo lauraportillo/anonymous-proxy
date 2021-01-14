@@ -12,112 +12,15 @@
 </head>
 
 <body>
-  <header id="anchor-start">
-    <!--MODULO 1-->
-    <nav class="header__ico-menu">
-      <a href="https://adalab.es/" target="_blank"><img class="header__ico-menu--arrows"
-          src="./assets/images/ico-menu.png" alt="hamburger-menu arrows"></a>
-    </nav>
 
-    <div class="header__hero">
-      <div class="header__text">
-        <h1 class="header__hero--title">Anonymous proxy</h1>
-        <h2 class="header__hero--subtitle">In hac habitasse platea dictumst.</h2>
-        <button class="header__hero--button">
-          <!--ENLACE SECCION 3 REASONS-->
-          <a href="#anchor-reasons"><img src="./assets/images/ico-scroll-down.png" alt="ico-scroll-down"></a>
-
-        </button>
-      </div>
-    </div>
-  </header>
+  <include src="./partials/mod-1-header.html"></include>
 
   <main>
-    <!--MODULO 2-->
-    <section class="module2-container">
-
-      <h3 class="module2-container__tips">Insomnia tips</h3>
-      <article>
-        <h2 class="module2-container__article--title">Looking through a window</h2>
-        <p class="module2-container__article--text">Donec accumsan, nulla ut volutpat porttitor, quam odio tempus
-          felis, at luctus ex diam nec lectus. Vivamus
-          semper sodales rutrum.</p>
-      </article>
-      <!--AÑADIR TRANSICION-->
-      <button class="module2-container__button">Go</button>
-
-    </section>
-
-    <!--MODULO 3-->
-    <section class="module3-container" id="anchor-reasons">
-      <h2 class="module3-container__reasons">3 reasons to purchase</h2>
-      <article class="module3-container__article1">
-        <h2 class="module3-container__article--title">Ut sed metus</h2>
-        <p class="module3-container__article--text">Lorem ipsum dolor sit amet, consecteur.</p>
-      </article>
-      <article class="module3-container__article2">
-        <h2 class="module3-container__article--title">Curabitur ac erat</h2>
-        <p class="module3-container__article--text">Mauris mattis urna quis lorem molestie.</p>
-      </article>
-      <article class="module3-container__article3">
-        <h2 class="module3-container__article--title">Morbi dictum</h2>
-        <p class="module3-container__article--text">Aliquam in dolor et dolor tincidunt.</p>
-      </article>
-      <!--AÑADIR TRANSICION-->
-      <button class="module3-container__button">More reasons</button>
-    </section>
+    <include src="./partials/mod-2-main.html"></include>
+    <include src="./partials/mod-3-main.html"></include>
   </main>
-  <!--MODULO 4-->
-  <footer class="module4">
-    <button class="footer__button">
-      <!--ENLACE AL INICIO DE LA PAGINA-->
-      <a href="#anchor-start"><img src="./assets/images/ico-arrow.png" alt="ico-arrow-scroll-up"></a>
-    </button>
 
-    <div class="footer">
-
-      <nav class="footer__nav1">
-        <ul class="footer__menu">
-          <li>
-            <a class="footer__menu--link" href="https://adalab.es/" target="_blank">Articles</a>
-          </li>
-          <li>
-            <a class="footer__menu--link" href="https://adalab.es/" target="_blank">Books</a>
-          </li>
-          <li>
-            <a class="footer__menu--link" href="https://adalab.es/" target="_blank">Events</a>
-          </li>
-          <li>
-            <a class="footer__menu--link" href="https://adalab.es/" target="_blank">Reasons</a>
-          </li>
-          <li>
-            <a class="footer__menu--link" href="https://adalab.es/" target="_blank">Tips</a>
-          </li>
-        </ul>
-      </nav>
-
-      <nav class="footer__nav2">
-        <ul class="footer__menu">
-          <li>
-            <a class="footer__menu--link" href="https://adalab.es/" target="_blank">Twitter</a>
-          </li>
-          <li>
-            <a class="footer__menu--link" href="https://adalab.es/" target="_blank">Instagram</a>
-          </li>
-          <li>
-            <a class="footer__menu--link" href="https://adalab.es/" target="_blank">Mastodon.social</a>
-          </li>
-        </ul>
-      </nav>
-
-      <div class="footer__small">
-        <small class="footer__small--copy">©2021</small>
-        <small class="footer__small--love">we <span class="footer__small--heart">❤︎</span> components</small>
-      </div>
-
-    </div>
-
-  </footer>
+  <include src="./partials/mod-4-footer.html"></include>
 
 </body>
 

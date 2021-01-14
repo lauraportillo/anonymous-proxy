@@ -311,6 +311,7 @@ $color-black: #000000;
   line-height: 1.88;
   letter-spacing: normal;
   text-align: center;
+  padding: 5px;
 }
 .footer__small {
   display: flex;
@@ -466,6 +467,7 @@ $color-black: #000000;
     font-size: 100px;
     margin-bottom: 0px;
   }
+
   .header__hero--subtitle {
     font-size: 24px;
   }
@@ -520,6 +522,7 @@ $color-black: #000000;
   .module3-container__article3 {
     grid-column: 3/4;
     grid-row: 2/3;
+    height: 135px;
   }
   .module3-container__article--title {
     font-size: 24px;
