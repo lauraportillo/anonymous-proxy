@@ -22,11 +22,21 @@
   transform: translateY(-25px);
   display: block;
   margin: auto;
+  animation: pulse 5s infinite;
 }
 
 .footer__button:hover {
   border: none;
   outline: none;
+}
+
+@keyframes pulse {
+  0% {
+    background-color: $color-white;
+  }
+  100% {
+    background-color: $color-lightblue;
+  }
 }
 
 .footer__menu {

@@ -51,7 +51,6 @@
   text-transform: uppercase;
   font-family: $font-family-title;
   margin-bottom: 10px;
-  animation: pulse 7s infinite;
   @media all and (min-width: 768px) {
     margin-bottom: 20px;
     font-size: 80px;
@@ -59,15 +58,6 @@
   @media all and (min-width: 1280px) {
     font-size: 100px;
     margin-bottom: 0px;
-  }
-}
-
-@keyframes pulse {
-  0% {
-    color: $color-white;
-  }
-  100% {
-    color: $color-c;
   }
 }
 
