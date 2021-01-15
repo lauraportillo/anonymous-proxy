@@ -1,0 +1,35 @@
+.section3 {
+  background-color: $color-c;
+  color: $color-white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.section3__title {
+  background-color: brown;
+}
+.section3__subtitles {
+  background-color: blue;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.section3__subtitles--premium {
+  margin-left: 20px;
+}
+.section3__subtitles--discount {
+  margin-right: 20px;
+}
+
+@media all and (min-width: 0px) {
+  .section3 {
+    display: none;
+  }
+}
+
+@media all and (min-width: 768px) {
+  .section3 {
+    display: flex;
+  }
+}
